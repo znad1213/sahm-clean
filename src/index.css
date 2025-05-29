@@ -1,0 +1,100 @@
+@tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer base {
+      :root {
+        --background: 210 20% 98%; /* Light Gray */
+        --foreground: 224 71% 4%; /* Dark Blue-Black */
+
+        --card: 0 0% 100%;
+        --card-foreground: 224 71% 4%;
+
+        --popover: 0 0% 100%;
+        --popover-foreground: 224 71% 4%;
+
+        --primary: 190 80% 45%; /* Professional Teal */
+        --primary-foreground: 0 0% 100%;
+
+        --secondary: 210 70% 55%; /* Calming Blue */
+        --secondary-foreground: 0 0% 100%;
+
+        --muted: 210 30% 94%;
+        --muted-foreground: 215 20% 45%;
+
+        --accent: 35 90% 58%; /* Warm Gold/Orange */
+        --accent-foreground: 224 71% 4%;
+
+        --destructive: 0 72% 51%;
+        --destructive-foreground: 0 0% 100%;
+
+        --border: 210 20% 88%;
+        --input: 210 20% 88%;
+        --ring: 190 80% 45%;
+
+        --radius: 0.5rem; /* Standard rounding */
+      }
+
+      .dark {
+        --background: 224 71% 4%; /* Dark Blue-Black */
+        --foreground: 210 20% 98%; /* Light Gray */
+
+        --card: 220 40% 10%;
+        --card-foreground: 210 20% 98%;
+
+        --popover: 224 71% 4%;
+        --popover-foreground: 210 20% 98%;
+
+        --primary: 190 75% 55%;
+        --primary-foreground: 224 71% 4%;
+
+        --secondary: 210 65% 60%;
+        --secondary-foreground: 224 71% 4%;
+
+        --muted: 220 30% 15%;
+        --muted-foreground: 215 20% 65%;
+
+        --accent: 35 85% 62%;
+        --accent-foreground: 224 71% 4%;
+
+        --destructive: 0 60% 45%;
+        --destructive-foreground: 0 0% 100%;
+
+        --border: 220 30% 20%;
+        --input: 220 30% 20%;
+        --ring: 190 75% 55%;
+      }
+    }
+
+    @layer base {
+      * {
+        @apply border-border;
+      }
+      body {
+        @apply bg-background text-foreground;
+        font-family: 'Noto Kufi Arabic', sans-serif;
+      }
+      /* Add Google Font Noto Kufi Arabic */
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700;900&display=swap');
+    }
+
+    .glassmorphism-light {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    
+    .dark .glassmorphism-dark {
+      background: rgba(10, 20, 40, 0.5); /* Darker, less transparent */
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .text-gradient-professional {
+      @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+    }
+    .text-gradient-accented {
+      @apply bg-gradient-to-r from-accent to-orange-500 bg-clip-text text-transparent;
+    }
