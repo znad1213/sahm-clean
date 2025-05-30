@@ -14,6 +14,9 @@ import React from 'react';
     import ProtectedRoute from '@/components/auth/ProtectedRoute';
     import ManageUsersPage from '@/pages/admin/ManageUsersPage.jsx';
     import ManageContentPage from '@/pages/admin/ManageContentPage.jsx'; 
+    import ManageProductsPage from '@/pages/admin/ManageProductsPage.jsx';
+    import ManageServicesPage from '@/pages/admin/ManageServicesPage.jsx';
+    import ManageClientsPage from '@/pages/admin/ManageClientsPage.jsx';
     import DynamicContentPage from '@/pages/DynamicContentPage.jsx';
     import SiteSettingsPage from '@/pages/admin/SiteSettingsPage.jsx';
 
@@ -92,10 +95,34 @@ import React from 'react';
               } 
             />
             <Route 
+              path="/admin/manage-products"
+              element={
+                <ProtectedRoute adminOnly={true}>
+                  <AnimatedPageContent><ManageProductsPage /></AnimatedPageContent>
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/admin/manage-services"
+              element={
+                <ProtectedRoute adminOnly={true}>
+                  <AnimatedPageContent><ManageServicesPage /></AnimatedPageContent>
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
               path="/admin/site-settings"
               element={
                 <ProtectedRoute adminOnly={true}>
                   <AnimatedPageContent><SiteSettingsPage /></AnimatedPageContent>
+                </ProtectedRoute>
+              }
+            />
+            <Route 
+              path="/admin/manage-clients"
+              element={
+                <ProtectedRoute adminOnly={true}>
+                  <AnimatedPageContent><ManageClientsPage /></AnimatedPageContent>
                 </ProtectedRoute>
               }
             />
