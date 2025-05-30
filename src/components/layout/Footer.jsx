@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Phone, Mail, Info } from 'lucide-react';
+import { Phone, Mail, Instagram, Hand as BrandX, GitBranch as BrandTiktok, GitBranch as BrandSnapchat } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -25,18 +25,60 @@ const Footer = () => {
             جميع الحقوق محفوظة © {new Date().getFullYear()} شركة سهم كلين.
           </p>
           <p className="text-muted-foreground/70 text-xs mt-1">
-            تصميم وتطوير بواسطة Hostinger Horizons
+            تصميم وتطوير بواسطة زناد الزهراني
           </p>
         </div>
 
         <div className="flex flex-col items-center md:items-end">
           <h4 className="font-semibold text-foreground mb-2">تواصل معنا</h4>
-          <a href="tel:+966567978309" className="text-muted-foreground hover:text-primary transition-colors flex items-center">
-            <Phone className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" /> 966567978309+
+          <a href="tel:+966570500666" className="text-muted-foreground hover:text-primary transition-colors flex items-center">
+            <Phone className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" /> 0570500666
           </a>
-          <a href="mailto:info@sahmalnaqaa.com" className="text-muted-foreground hover:text-primary transition-colors flex items-center mt-1">
-            <Info className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" /> info@sahmalnaqaa.com
+          <a href="mailto:sahmclean1@gmail.com" className="text-muted-foreground hover:text-primary transition-colors flex items-center mt-1">
+            <Mail className="w-4 h-4 ml-2 rtl:mr-2 rtl:ml-0" /> sahmclean1@gmail.com
           </a>
+          <div className="flex items-center space-x-3 rtl:space-x-reverse mt-3">
+            <motion.a 
+              href="https://instagram.com/sahmclean1" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-[#E4405F] transition-colors p-2"
+              whileHover={{ scale: 1.2, rotate: [0, -10, 10, -10, 0] }}
+              transition={{ duration: 0.3 }}
+            >
+              <Instagram className="w-6 h-6" />
+            </motion.a>
+            <motion.a 
+              href="https://x.com/sahmclean1" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-black transition-colors p-2"
+              whileHover={{ scale: 1.2, y: -3 }}
+              transition={{ duration: 0.2 }}
+            >
+              <BrandX className="w-6 h-6" />
+            </motion.a>
+            <motion.a 
+              href="https://tiktok.com/@sahmclean1" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-[#000000] transition-colors p-2"
+              whileHover={{ scale: 1.2, rotate: 360 }}
+              transition={{ duration: 0.5 }}
+            >
+              <BrandTiktok className="w-6 h-6" />
+            </motion.a>
+            <motion.a 
+              href="https://snapchat.com/add/sahmclean1" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-[#FFFC00] transition-colors p-2"
+              whileHover={{ scale: 1.2, y: [0, -3, 3, -3, 0] }}
+              transition={{ duration: 0.3 }}
+            >
+              <BrandSnapchat className="w-6 h-6" />
+            </motion.a>
+          </div>
         </div>
       </div>
     </motion.footer>
