@@ -68,10 +68,10 @@ const HeroSection = ({ onOpenContactModal }) => (
     animate="visible"
     variants={staggerContainer}
   >
-    <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-primary/70 backdrop-blur-sm"></div>
+    <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-primary/60 backdrop-blur-sm"></div>
     <div className="relative z-10">
       <motion.h2 variants={textVariant(0.2)} className="text-5xl md:text-7xl font-black mb-6 text-white">
-        <span className="bg-gradient-to-r from-white via-white to-white/90 bg-clip-text text-transparent drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">نظافة</span> تليق بك، <span className="text-gradient-accented">بخدمة</span> ترضيك
+        <span className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)] font-black">نظافة</span> تليق بك، <span className="text-gradient-accented">بخدمة</span> ترضيك
       </motion.h2>
       <motion.p variants={textVariant(0.4)} className="text-xl md:text-2xl text-slate-200 mb-10 max-w-3xl mx-auto">
         شركة سهم كلين تقدم لكم أرقى خدمات النظافة الشاملة للمنازل، الشركات، والسيارات. جودة عالية، أسعار منافسة، ورضاكم هو غايتنا.
