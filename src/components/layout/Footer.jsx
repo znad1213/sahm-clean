@@ -15,7 +15,7 @@ import React from 'react';
             <div className="flex flex-col items-center md:items-start">
               <div className="flex items-center space-x-2 rtl:space-x-reverse mb-2">
                  <img  className="h-10 w-10" alt="شعار شركة سهم كلين المصغر" src="https://images.unsplash.com/photo-1485531865381-286666aa80a9" />
-                <h3 className="text-xl font-bold text-gradient-professional">سهم النقاء</h3>
+                <h3 className="text-xl font-bold text-gradient-professional">سهم كلين</h3>
               </div>
               <p className="text-muted-foreground text-sm">نظافة تثق بها، خدمة تعتمد عليها.</p>
             </div>
