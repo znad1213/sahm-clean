@@ -73,7 +73,7 @@ import React, { useState } from 'react';
             <span className="text-gradient-professional">نظافة</span> تليق بك، <span className="text-gradient-accented">بخدمة</span> ترضيك
           </motion.h2>
           <motion.p variants={textVariant(0.4)} className="text-xl md:text-2xl text-slate-200 mb-10 max-w-3xl mx-auto">
-            شركة سهم النقاء تقدم لكم أرقى خدمات النظافة الشاملة للمنازل، الشركات، والسيارات. جودة عالية، أسعار منافسة، ورضاكم هو غايتنا.
+            شركة سهم كلين تقدم لكم أرقى خدمات النظافة الشاملة للمنازل، الشركات، والسيارات. جودة عالية، أسعار منافسة، ورضاكم هو غايتنا.
           </motion.p>
           <motion.div variants={fadeIn}>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-10 py-6 shadow-lg transform hover:scale-105 transition-transform" onClick={() => onOpenContactModal('استشارة عامة')}>
