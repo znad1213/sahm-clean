@@ -63,12 +63,12 @@ const servicesData = {
 const HeroSection = ({ onOpenContactModal }) => (
   <motion.section 
     className="text-center py-20 px-4 w-full bg-cover bg-center relative"
-    style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80')"}}
+    style={{ backgroundImage: "url('https://images.unsplash.com/photo-1635048424329-a9bfb146d7aa?auto=format&fit=crop&q=80')"}}
     initial="hidden"
     animate="visible"
     variants={staggerContainer}
   >
-    <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+    <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-secondary/80 backdrop-blur-sm"></div>
     <div className="relative z-10">
       <motion.h2 variants={textVariant(0.2)} className="text-5xl md:text-7xl font-black mb-6 text-white">
         <span className="text-gradient-professional">نظافة</span> تليق بك، <span className="text-gradient-accented">بخدمة</span> ترضيك
