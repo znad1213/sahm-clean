@@ -292,7 +292,7 @@ const ManageClientsPage = () => {
                   <TableCell>
                     <div className="flex items-center space-x-2 rtl:space-x-reverse">
                       {index > 0 && (
-                        <Button variant="ghost" size="icon" onClick={() => handleReorder(client.id, 'up')} className="text-primary hover:text-primary/80">
+                        <Button variant="ghost\" size="icon\" onClick={() => handleReorder(client.id, 'up')} className="text-primary hover:text-primary/80">
                           <MoveUp size={18} />
                         </Button>
                       )}
