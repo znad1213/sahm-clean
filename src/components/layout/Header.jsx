@@ -33,7 +33,7 @@ import React from 'react';
           <div className="container mx-auto flex justify-between items-center">
             <Link to="/" className="flex items-center space-x-2 rtl:space-x-reverse">
               <motion.div whileHover={{ rotate: [0, 10, -10, 0], scale:1.1}}>
-                 <img  className="h-12 w-12" alt="شعار شركة سهم النقاء" src="https://images.unsplash.com/photo-1628592739641-5354300d8208" />
+                 <img  className="h-12 w-12" alt="شعار شركة سهم كلين" src="https://images.unsplash.com/photo-1628592739641-5354300d8208" />
               </motion.div>
               <h1 className="text-2xl md:text-3xl font-black text-gradient-professional whitespace-nowrap">
                 سهم النقاء
