@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
     import { motion } from 'framer-motion';
     import { Button } from '@/components/ui/button';
     import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card';
-    import { Home, Briefcase, Car, Sparkles, Package, Zap, Phone, ShieldCheck, SprayCan, Sun, Wind, MessageSquare, Star, ChevronRight, ChevronLeft, MapPin, AirVent, Sofa } from 'lucide-react';
+    import { Home, Briefcase, Car, Sparkles, Package, Zap, Phone, ShieldCheck, SprayCan, Sun, Wind, MessageSquare, Star, ChevronRight, ChevronLeft, MapPin, AirVent, Sofa, Loader2 } from 'lucide-react';
     import { Link } from 'react-router-dom';
     import ContactModal from '@/components/ContactModal';
     import ShowerHead from 'lucide-react/dist/esm/icons/shower-head';
@@ -256,38 +256,54 @@ import React, { useState } from 'react';
       );
     };
 
-    const TestimonialsSection = () => {
-      const testimonials = [
-        { name: "أحمد الغامدي", feedback: "خدمة ممتازة وسريعة، فريق العمل محترف جداً. أنصح بهم بشدة!", avatarText: "أغ", rating: 5 },
-        { name: "فاطمة الشهري", feedback: "الاهتمام بالتفاصيل كان رائعاً، المنزل أصبح يلمع من النظافة. شكراً لكم!", avatarText: "فش", rating: 5 },
-        { name: "خالد المطيري", feedback: "سيارتي عادت كالجديدة بعد خدمة التلميع بالبخار. عمل متقن.", avatarText: "خم", rating: 4 },
-      ];
+    const ClientsSection = () => {
+      const [clients, setClients] = useState([]);
+      const [loading, setLoading] = useState(true);
+
+      useEffect(() => {
+        const fetchClients = async () => {
+          try {
+            const { data, error } = await supabase
+              .from('clients')
+              .select('*')
+              .order('order', { ascending: true });
+
+            if (error) throw error;
+            setClients(data || []);
+          } catch (error) {
+            console.error('Error fetching clients:', error);
+          } finally {
+            setLoading(false);
+          }
+        };
+
+        fetchClients();
+      }, []);
+
       return (
         <motion.section id="testimonials" className="py-20 px-4 w-full" initial="hidden" animate="visible" variants={staggerContainer}>
-          <motion.h2 variants={fadeIn} className="text-4xl font-bold text-center mb-16 text-gradient-professional">ماذا يقول عملاؤنا</motion.h2>
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <motion.div variants={fadeIn} key={index}>
-                <Card className="h-full bg-card shadow-xl hover:shadow-2xl transition-shadow duration-300 p-6 rounded-lg border-l-4 border-primary">
-                  <CardHeader className="flex flex-row items-center space-x-4 rtl:space-x-reverse pb-4">
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-xl font-bold shadow">
-                      {testimonial.avatarText}
-                    </div>
-                    <div>
-                      <CardTitle className="text-xl text-foreground">{testimonial.name}</CardTitle>
-                      <div className="flex mt-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className={`w-5 h-5 ${i < testimonial.rating ? 'text-accent fill-accent' : 'text-muted-foreground/50'}`} />
-                        ))}
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground italic">"{testimonial.feedback}"</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
+          <motion.h2 variants={fadeIn} className="text-4xl font-bold text-center mb-16 text-gradient-professional">نفخر بعملائنا</motion.h2>
+          <div className="flex flex-wrap justify-center items-center gap-8 max-w-6xl mx-auto">
+            {loading ? (
+              <Loader2 className="w-12 h-12 animate-spin text-primary" />
+            ) : clients.length > 0 ? (
+              clients.map((client) => (
+                <motion.div
+                  key={client.id}
+                  variants={fadeIn}
+                  className="w-40 h-40 p-4 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow flex items-center justify-center"
+                >
+                  <img
+                    src={client.logo_url}
+                    alt={client.name}
+                    className="max-w-full max-h-full object-contain"
+                    title={client.name}
+                  />
+                </motion.div>
+              ))
+            ) : (
+              <p className="text-muted-foreground">لم يتم إضافة أي عملاء بعد.</p>
+            )}
           </div>
         </motion.section>
       );
@@ -347,7 +363,7 @@ import React, { useState } from 'react';
           <ServicesSlider services={servicesData} onOpenContactModal={openContactModal} />
           <DetailedServicesSection services={servicesData} onOpenContactModal={openContactModal} />
           <PackagesSection onOpenContactModal={openContactModal} />
-          <TestimonialsSection />
+          <ClientsSection />
           <EmergencySection onOpenContactModal={openContactModal} />
           <WhatsAppButton />
         </div>
