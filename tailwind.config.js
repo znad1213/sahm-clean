@@ -25,10 +25,10 @@
             sans: ['Noto Kufi Arabic', 'sans-serif'],
           },
           colors: {
-            border: 'hsl(var(--border))',
-            input: 'hsl(var(--input))',
-            ring: 'hsl(var(--ring))',
-            background: 'hsl(var(--background))',
+            border: 'hsl(var(--border))', 
+            input: 'hsl(var(--input))', 
+            ring: 'hsl(var(--ring))', 
+            background: 'hsl(220 70% 98%)', // Modern light blue background
             foreground: 'hsl(var(--foreground))',
             primary: {
               DEFAULT: 'hsl(var(--primary))',
