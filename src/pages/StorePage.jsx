@@ -98,7 +98,7 @@ import React, { useState, useEffect } from 'react';
           <ContactModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} serviceName={selectedProductForModal} />
 
           <motion.header variants={fadeIn} className="mb-12 text-center">
-            <h1 className="text-4xl md:text-6xl font-extrabold text-gradient-professional mb-4">متجر سهم النقاء</h1>
+            <h1 className="text-4xl md:text-6xl font-extrabold text-gradient-professional mb-4">متجر سهم كلين</h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               منتجات تنظيف عالية الجودة، مختارة بعناية لتلبية احتياجاتك. تسوق الآن!
             </p>
