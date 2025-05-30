@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Phone, Mail, Instagram, MessageSquare, BrandX, BrandTiktok, BrandSnapchat } from 'lucide-react';
+import { Phone, Mail, Instagram, MessageSquare, Hand as BrandX, GitBranch as BrandTiktok, GitBranch as BrandSnapchat } from 'lucide-react';
 
 const Footer = () => {
   return (
