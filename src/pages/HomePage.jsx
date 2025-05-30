@@ -339,8 +339,9 @@ const WhatsAppButton = () => (
       href="https://wa.me/966567978309" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="block p-4 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors"
-      whileHover={{ scale: 1.1 }}
+      className="block p-4 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-all transform"
+      whileHover={{ scale: 1.2, rotate: 15 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}
       whileTap={{ scale: 0.9 }}
     >
       <MessageSquare className="w-8 h-8" />

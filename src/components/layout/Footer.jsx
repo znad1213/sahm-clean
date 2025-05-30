@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Phone, Mail, Instagram, Twitter as BrandX, GitBranch as BrandTiktok, Snail as BrandSnapchat } from 'lucide-react';
+import { Phone, Mail, Instagram, MessageSquare, BrandX, BrandTiktok, BrandSnapchat } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -42,7 +42,7 @@ const Footer = () => {
               href="https://instagram.com/sahmclean1" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-[#E4405F] transition-all p-2"
+              className="text-muted-foreground hover:text-[#E4405F] transition-all p-2 transform"
               whileHover={{ scale: 1.2, rotate: 15 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
@@ -52,7 +52,7 @@ const Footer = () => {
               href="https://x.com/sahmclean1" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-black transition-all p-2"
+              className="text-muted-foreground hover:text-black transition-all p-2 transform"
               whileHover={{ scale: 1.2, rotate: 15 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
@@ -62,7 +62,7 @@ const Footer = () => {
               href="https://tiktok.com/@sahmclean1" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-[#000000] transition-all p-2"
+              className="text-muted-foreground hover:text-[#000000] transition-all p-2 transform"
               whileHover={{ scale: 1.2, rotate: 15 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
@@ -72,7 +72,7 @@ const Footer = () => {
               href="https://snapchat.com/add/sahmclean1" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-[#FFFC00] transition-all p-2"
+              className="text-muted-foreground hover:text-[#FFFC00] transition-all p-2 transform"
               whileHover={{ scale: 1.2, rotate: 15 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
