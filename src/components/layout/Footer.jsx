@@ -22,7 +22,7 @@ import React from 'react';
             
             <div className="text-center">
                <p className="text-muted-foreground">
-                جميع الحقوق محفوظة © {new Date().getFullYear()} شركة سهم النقاء.
+                جميع الحقوق محفوظة © {new Date().getFullYear()} شركة سهم كلين.
               </p>
               <p className="text-muted-foreground/70 text-xs mt-1">
                 تصميم وتطوير بواسطة Hostinger Horizons
