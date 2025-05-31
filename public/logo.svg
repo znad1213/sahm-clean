@@ -9,7 +9,7 @@
         <stop offset="100%" style="stop-color:hsl(205, 79%, 49%);stop-opacity:1" />
       </linearGradient>
     </defs>
-    <path d="M50 10 L15 3 L15 50 L10 05 L10 75 L80 35 Z" fill="url(#grad1)" stroke="hsl(210, 20%, 88%)" stroke-width="2"/>
+    <path d="M50 10 L15 3 L15 50 L10 05 L10 75 L10 35 Z" fill="url(#grad1)" stroke="hsl(210, 20%, 88%)" stroke-width="2"/>
    
 
     
