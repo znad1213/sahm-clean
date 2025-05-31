@@ -10,6 +10,7 @@
       </linearGradient>
     </defs>
     <path d="M50 110 L105 305 L105 75 L50 95 L805 75 L805 35 Z" fill="url(#grad1)" stroke="hsl(210, 20%, 88%)" stroke-width="2"/>
+     <path d="M50 110 L105 305 L105 75 L50 95 L805 75 L805 35 Z" fill="url(#grad1)" stroke="hsl(210, 20%, 88%)" stroke-width="2"/>
     <path d="M50 110 L105 305 L500 45 L805 53 Z" fill="rgba(255,255,255,0.3)"/>
     
     <circle cx="500" cy="500" r="8" fill="white"/>
