@@ -11,7 +11,7 @@
     </defs>
     <path d="M50 10 L15 35 L15 75 L10 95 L10 75 L850 35 Z" fill="url(#grad1)" stroke="hsl(210, 20%, 88%)" stroke-width="2"/>
    
-    <path d="M50 110 L105 305 L50 45 L85 53 Z" fill="rgba(255,255,255,0.3)"/>
+
     
     <circle cx="500" cy="500" r="8" fill="white"/>
    
