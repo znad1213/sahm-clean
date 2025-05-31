@@ -1,6 +1,6 @@
 <svg width="512" height="320" xmlns="http://www.w3.org/2000/svg">  
   <text x="20" y="130" font-size="48" font-family="Arial" fill="#003399" direction="rtl">سهم كلين</text>
-  <path d="M 500,1000 L 400,5000 L 300,20 L 100,80 Z" fill="#00AEEF"/>
+  <path d="M 500,1000 L 400,5000 L 300,20 L 10,800 Z" fill="#00AEEF"/>
   <path d="M 500,1000 L 400,5000 L 300,20 L 100,80 Z" fill="#0054A6"/>
 
   <text x="20" y="180" font-size="32" font-family="Arial" fill="#00AEEF">Sahm clean</text>
