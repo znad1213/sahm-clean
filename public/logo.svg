@@ -1,19 +1,6 @@
-<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style="stop-color:hsl(205, 79%, 49%);stop-opacity:1" />
-        <stop offset="100%" style="stop-color:hsl(160, 60%, 45%);stop-opacity:1" />
-      </linearGradient>
-      <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style="stop-color:hsl(25, 95%, 53%);stop-opacity:1" />
-        <stop offset="100%" style="stop-color:hsl(205, 79%, 49%);stop-opacity:1" />
-      </linearGradient>
-    </defs>
-    <path d="M500 10 L150 3 L15 50 L10 50 L10 75 L10 35 Z" fill="url(#grad1)" stroke="hsl(210, 20%, 88%)" stroke-width="2"/>
-   
-
-    
-    <circle cx="500" cy="500" r="8" fill="white"/>
-   
-    
-    </svg>
+<svg width="512" height="320" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 499,160 L 400,80 L 300,160 L 400,240 Z" fill="#00AEEF"/>
+  <path d="M 499,160 L 400,240 L 300,320 L 400,160 Z" fill="#0054A6"/>
+  <text x="20" y="130" font-size="48" font-family="Arial" fill="#003399" direction="rtl">سهم كلين</text>
+  <text x="20" y="180" font-size="32" font-family="Arial" fill="#00AEEF">Sahm clean</text>
+</svg>
